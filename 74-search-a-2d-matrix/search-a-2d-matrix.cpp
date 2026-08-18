@@ -8,7 +8,7 @@ public:
         int h = n*m -1;
         int mid =0;
         while(l<=h){
-            mid=(l+h)/2;
+            mid=l+(h-l)/2;
             int i = mid/m;
             int j = mid-(i*m);
             if(a[i][j]==target)
