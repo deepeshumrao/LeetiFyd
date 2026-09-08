@@ -3,6 +3,6 @@ class Solution:
         resstr=""
         lower=s.lower()
         for ch in lower:
-            if ch.isalpha() or ch.isdigit():
+            if ch.isalnum():
                 resstr+=ch
         return resstr==resstr[::-1]
